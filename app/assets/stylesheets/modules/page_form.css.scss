@@ -1,0 +1,166 @@
+.page{
+  @include column(10,center);
+  @include background-size(100%);
+  background-image: image-url("note.jpg");
+  border: 3px $blue_form_border solid;
+  border-radius: 7px; 
+  color:  $darkgreen;
+  input[type="submit"]{
+    border: none;
+    background-color: transparent;
+    width: 35px;
+    color: white;
+    padding: 0.3% 5%
+  }
+  .descr{display: none;}   
+  td:hover {
+    .descr{
+      display: block;
+      font-size: 16px;
+      color: $hower_color;
+    }
+  }
+  #title{
+
+    font: italic 26px Symbol;
+    font-weight: bold;
+  }
+  .head{
+    border-bottom: 2px $salmon solid;
+  }
+  table{
+    @include padding-leader;
+    @include column(12,center);
+    #chek{ 
+      width: 10%;
+    }  
+    #name{
+      width: 58%
+    }
+    #urgency{
+      width: 10%
+    }
+    #date{
+      width: 12%
+    }
+    #hrefs{
+      width: 10%
+    }
+
+    th{
+      @include padding-leader(0.5);
+      border-bottom: 2px $salmon solid;
+      text-align: center;
+    }
+    #head{
+      border-bottom: 2px $salmon solid;
+      
+      
+    }
+    #title,#description{
+      @include margin-leader(0.3);
+      text-align: center;
+    }
+    #description{
+      color: $title_form;
+    }
+  }
+}
+.sections{
+  @include column(7,center);
+  table{width:100%}
+  td{
+    border-bottom: 1px solid $CornflowerBlue;
+    height: 42px;
+  } 
+  #names{
+    width: 80%;
+  }
+  #linkss{
+    width: 20%;
+  }
+  #section_id:hover {
+    background-color: rgba(176,196,222,0.5);
+  }
+}
+
+.not_br{
+  margin-top: -3%;
+}
+
+.max{
+@include margin-trailer;
+  color: $title_form;
+  font-size: 24px;
+  @include column(10,center);
+  text-align: center;
+    #error_explanation {
+      @include column(10,center);
+    }
+}
+
+.contact{
+  @include column(12,center);
+  @include margin-trailer(0.5);
+  color: $blue_form_border;
+  
+  tr{
+    border-bottom: 1px $blue_form_border solid;
+  }
+    .surname{ @include column(1.4,center);    }
+    .name_patronymic{@include column(1.8,center);}
+    .about_contact{@include column(2,center);}
+    .phone{@include column(1.2,center);}
+    .address{@include column(1.2,center);}
+    .fax{@include column(0.9,center);}
+    .email{@include column(0.9,center);}
+    .skype{@include column(0.9,center);}
+    .site{@include column(0.9,center);}
+    .hrefs_contact{@include column(0.7,center);}
+
+       
+    .surname,.name_patronymic, .about_contact,.phone,.address,.fax,.email, .skype, .hrefs_contact
+    {
+      word-break: break-all;
+      
+    }
+    th{border-right: 1px $blue_form_border solid;}
+  
+}
+.contact_id{
+  @include column(6,center);
+  font-size: 23px;
+
+
+  
+  color:  $darkgreen;
+  table{
+  @include column(12);
+    @include background-size(100%);
+    border: 3px $blue_form_border solid;
+  border-radius: 7px; 
+  background-image: image-url("note.jpg");
+    tr{
+  
+    border-bottom: 1px $blue_form_border solid;
+  }    
+    th
+    {
+
+    color:$title_form;
+    font-size: 24px;
+      @include column(6,center);
+      border-right: 1px $blue_form_border solid;
+    }
+    td{@include column(6,center);
+    word-break: break-all;}
+  }
+  color: $blue_form_border;
+
+
+  
+}
+
+.word-break{
+  word-break: break-all;
+}

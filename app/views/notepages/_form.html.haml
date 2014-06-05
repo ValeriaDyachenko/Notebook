@@ -1,0 +1,6 @@
+= form_for([@notesection, @notesection.notepages.build]) do |f|
+  %p
+    = f.label I18n.t("Title Pages")
+    = f.text_field :title
+    %br
+    = f.submit I18n.t("Create")

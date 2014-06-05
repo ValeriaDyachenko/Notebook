@@ -1,0 +1,10 @@
+.e_form.big
+  #title
+    =t("New Page")
+  - if @notepage.errors.any?
+    #error_explanation
+      = @error
+  = render 'form'
+  %br
+  %space <-
+  = link_to I18n.t("Back to Section"), @notesection

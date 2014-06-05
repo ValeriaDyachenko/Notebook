@@ -1,0 +1,26 @@
+@import "compass";
+@import "compass_twitter_bootstrap";
+@import "foundation-grid";
+
+
+
+
+$darkgreen: #002900;
+$blue_form_border: #003366;	
+$h_f_blue: #0000a3;
+$blue_about_border: #4A708B;
+$back_color: #FFF5EE; 
+$title_form: #B22222; 
+$purple: #A020F0; 
+$CornflowerBlue: #6495ED;
+$hower_color: #915454;
+$salmon: #FA8072;
+
+
+@include global-reset;
+@include establish-baseline;
+
+
+@import "modules/*";
+@import "layouts";
+@import "home";

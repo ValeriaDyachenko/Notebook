@@ -1,0 +1,32 @@
+.about.mini_about
+  #title #{@notesection.title}
+  %space <-
+  = link_to  I18n.t("Back to Sections"), notesections_path
+  |
+  = link_to  I18n.t("Edit Section"), edit_notesection_path(@notesection)
+  %space ->
+  %br
+  =I18n.t("Open page")
+  %select#page_select{name: "page_select", onchange: "document.location=this.options[this.selectedIndex].value"}
+    %option ...
+    - @notepage.each do |p|
+      %option{value:"#{@notesection.id}/notepages/#{p.id}"}
+        = p.title
+
+.block
+  .extremum-click.pb
+    .pages_block 
+      =I18n.t("See all pages")
+      = image_tag("down.png", :border => 0)
+  .extremum-slide
+    = render @notesection.notepages
+%br
+    
+
+
+.add_form.max_add.not_br_add
+  = form_for([@notesection, @notesection.notepages.build]) do |f|
+    = f.label I18n.t("New Page")
+    = f.text_field :title,placeholder: I18n.t("Title Page")
+    = f.text_area :description, placeholder: "Текст", size:"5x4"
+    = f.submit I18n.t("Add")  

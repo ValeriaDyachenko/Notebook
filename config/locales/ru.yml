@@ -1,0 +1,121 @@
+
+ru:
+#Views
+  #Devise
+  Forgot: "Забыли"
+  Your: "Ваш"
+  Password: "Пароль"
+  Forgot your password?: "Забыли ваш пароль?"
+  Send me reset password instructions: "Отправить мне инструкции восстановления пароля"
+  Sign up: "Регистрация"
+  Password confirmation: "Подтверждение пароля"
+  Sign in: "Войти"
+  Remember me: "Запомнить меня"
+
+#For all
+  Are you sure?: "Вы уверены?"
+  Add: "+"
+  Create: "Создать"
+  Update: "Обновить"
+  Back: "Назад"
+  count: "количество"
+  Home: "Главная страница"
+  Settings: "Настройки"
+  All Sections: "Все Разделы"
+  All Tasks: "Дневник Заданий"
+  Book Tasks: "Книга Заданий"
+  Book Contacts: "Книга Контактов"
+  Book Notes: "Книга Записей"
+  English: "Английский"
+  Russian: "Русский"
+  Sign out: "Выйти"
+  Title can't be blank: "Наименование не должно отсутствовать"
+
+# Home  
+  eN: "Запишите,чтобы не забыть"
+  Sign: "Вход в систему:"
+  p1: "Записная книжка. Ваш личный помощник"
+  p2: "Записная книжка состоит из разделов, где находятся ваши страницы с заметками."
+  p3: "Каждой странице можно дать название - это позволит вам легко ориентироваться в своих заметках."
+  p4: "Каждая заметка имеет статус выполнения - это позволит отделить выполненные от невыполненых."
+
+#Settings
+  Edit Profile: "Редактировать профиль"
+  Leave blank: "(оставте поле пустым если не хотите вносить изменения)"
+  password_confirmation: "Подтверждение пароля"
+  current_password: "Текущий пароль"
+  we need: "(введите свой текущий пароль для подтверждения изменений)"
+  Cancel my account: "Удалить навсегда мой аккаунт"
+  Password New: "Новый пароль"
+  Delete: "Удалить"
+
+#Section
+  Title Section: "Наименование Раздела"
+  Edit Section: "Редактировать Раздел"
+  EditS: "Редактировать"
+  Sectione: "Раздел"
+  Back to Sections: "Вернуться к разделам"
+  New Section: "Новый Раздел"
+  All Sections: "Все Разделы"
+
+#Page
+  New Page: "Новая Страница"
+  Title Page: "Наименование Страницы"
+  EditP: "Редактировать"
+  Pagee: "Страницу"
+  Back to Section: "Вернуться к Разделу"
+
+#Task
+  Title Task: "Наименование Задания"
+  Description Task: "Описание Задания"
+  Status: "Статус"
+  Edit Task: "Редактировать Задание"
+  EditN: "Редактировать"
+  Taske: "Задание"
+  Completed Tasks: "Завершенные Задания"
+  ToDo Tasks: "Незавершенные Задания"
+  Page: "Страница"
+  New Task: "Новое Задание"
+
+#Activerecord
+  activerecord:
+    errors: 
+      models: 
+        user: 
+          attributes: 
+            email:
+              taken: " уже используется"
+              invalid: " недействителен"
+              blank: "не может быть пустым"
+            password:
+              blank: "не может быть пустым"
+              too_short: "слишком короткий (минимум 8 символов)"
+            password_confirmation: 
+              confirmation: ": пароли не совпадают"
+
+#Contacts
+  Surname: "Фамилия"
+  Name Patronymic: "Имя, Отчество"
+  About Contact: "Дополнительная информация"
+  Phone: "Телефон"
+  Address: "Адрес"
+  Fax: "Факс"
+  Email: "Email"
+  Skype: "Skype"
+  Site: "Сайт"
+  Edit Contact: "Редактировать Контакт"
+  Surname can't be blank: "Фамилия не должна отсутствовать"
+  New Contact: "Новый Контакт"
+  Open Contact: "Открыть Контакт:"
+  See all contacts: "Просмотреть все контакты"
+
+#Task  
+  Urgent Task: "Срочные задания"
+  Executed: "Выполнено"
+  Urgently: "Срочно"
+  Title: "Наименование"
+  Execute Until: "Выполнить до:"
+
+
+  Open page: "Открыть страницу:"
+  See all pages: "Просмотреть все страницы"

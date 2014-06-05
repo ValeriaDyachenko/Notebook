@@ -1,0 +1,81 @@
+%br
+.page.note_index.task_index
+  %table
+    %tr
+      .head
+        #title 
+          =I18n.t("Urgent Task")
+          ( #{@ucount} )
+    =render "th"
+    - @utasks.each  do |ut|
+      %tr
+        %td#chek
+          = link_to check_box_tag('execution_status', 'execution_status', ut.execution_status) , todosection_todopage_task_sti_path(ut.todopage.todosection.id,ut.todopage_id,ut.id), controller: :tasks,method: :put 
+        %td#name.left       
+          .ttitle
+            = ut.title
+            (#{ut.todopage.title})
+          .descr
+            = ut.description
+        %td#urgency
+          = link_to check_box_tag('urgency_status', 'urgency_status', ut.urgency_status) , todosection_todopage_task_usti_path(ut.todopage.todosection.id,ut.todopage_id,ut.id), controller: :tasks,method: :put 
+
+        %td#date
+          #{ut.completion_date}
+        %td#hrefs
+          = link_to image_tag("edt.png", :border => 0), edit_todosection_todopage_task_path(ut.todopage.todosection,ut.todopage,ut) 
+          = link_to image_tag("delt.png",:border => 0), [ut.todopage.todosection, ut.todopage, ut],  method: :delete, data: { confirm: I18n.t("Are you sure?") }
+
+.page.note_index.task_index
+  %table
+    %tr
+      .head
+        #title 
+          =I18n.t("ToDo Tasks")
+          ( #{@fcount} )
+    =render "th"
+    - @ftasks.each  do |ft|
+      %tr
+        %td#chek
+          = link_to check_box_tag('execution_status', 'execution_status', ft.execution_status) , todosection_todopage_task_sti_path(ft.todopage.todosection.id,ft.todopage_id,ft.id), controller: :tasks,method: :put 
+        %td#name.left        
+          .ttitle
+            = ft.title
+            (#{ft.todopage.title})
+          .descr
+            = ft.description
+        %td#urgency
+          = link_to check_box_tag('urgency_status', 'urgency_status', ft.urgency_status) , todosection_todopage_task_usti_path(ft.todopage.todosection.id,ft.todopage_id,ft.id), controller: :tasks,method: :put 
+
+        %td#date
+          #{ft.completion_date}
+        %td#hrefs
+          = link_to image_tag("edt.png", :border => 0), edit_todosection_todopage_task_path(ft.todopage.todosection,ft.todopage,ft) 
+          = link_to image_tag("delt.png",:border => 0), [ft.todopage.todosection, ft.todopage, ft],  method: :delete, data: { confirm: I18n.t("Are you sure?") }
+
+.page.note_index.task_index
+  %table
+    %tr 
+      .head
+        #title 
+          =I18n.t("Completed Tasks")
+          ( #{@tcount} )
+    =render "th"
+    - @ttasks.each  do |tt|
+      %tr
+        %td#chek
+          = link_to check_box_tag('execution_status', 'execution_status', tt.execution_status) , todosection_todopage_task_sti_path(tt.todopage.todosection.id,tt.todopage_id,tt.id), controller: :tasks,method: :put 
+        %td#name.left      
+          .ttitle
+            = tt.title
+            (#{tt.todopage.title})
+          .descr
+            = tt.description
+        %td#urgency
+          = link_to check_box_tag('urgency_status', 'urgency_status', tt.urgency_status) , todosection_todopage_task_usti_path(tt.todopage.todosection.id,tt.todopage_id,tt.id), controller: :tasks,method: :put 
+
+        %td#date
+          #{tt.completion_date}
+        %td#hrefs
+          = link_to image_tag("edt.png", :border => 0), edit_todosection_todopage_task_path(tt.todopage.todosection,tt.todopage,tt) 
+          = link_to image_tag("delt.png",:border => 0), [tt.todopage.todosection, tt.todopage, tt],  method: :delete, data: { confirm: I18n.t("Are you sure?") }

@@ -1,0 +1,19 @@
+.stiker
+  .devise-form
+    %legend
+      .title
+        =t(:Forgot)
+        %br
+        =t(:Your)
+        %br
+        =t(:Password)
+        ?
+      %br
+      = form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post }) do |f|
+        = devise_error_messages!
+        %div
+          = f.label :email
+          = f.email_field :email, :autofocus => true
+        %div= f.submit I18n.t("Send me reset password instructions"), :id => "commit"
+        %br
+      = render "devise/shared/links"

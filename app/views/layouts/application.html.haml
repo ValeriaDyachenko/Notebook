@@ -1,0 +1,16 @@
+!!!
+%html
+  .background
+    %head
+      %title Notebook
+      = stylesheet_link_tag "application", media: "all"
+      = javascript_include_tag "application"
+      = csrf_meta_tags
+      %h5
+        .locales
+          = link_to image_tag("uk.png", :border => 0),:locale => I18n.default_locale =:uk
+          = link_to image_tag("ru.png", :border => 0), :locale => I18n.default_locale =:ru
+          = link_to image_tag("en1.png", :border => 0), :locale => I18n.default_locale =:en
+        = render 'layouts/user_header'
+    %body
+      = yield        

@@ -1,0 +1,6 @@
+= form_for @todosection do |f|
+  %p
+    = f.label I18n.t("Title Section")
+    = f.text_field :title
+    %br
+    = f.submit I18n.t("Create")

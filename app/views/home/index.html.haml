@@ -1,0 +1,39 @@
+.home_text  
+  .title
+    Notebook
+  .title2
+    =I18n.t("p1")
+  .title3
+    =I18n.t("eN")
+  - if !user_signed_in?
+    %br
+    .title2
+      =I18n.t("Sign")
+    .sin
+      = link_to image_tag("signi.png", :border => 0),new_user_session_path
+  - else
+    %p
+      *
+      =I18n.t('p2')
+    %p
+      *
+      =I18n.t('p3')
+    %p
+      *
+      =I18n.t('p4')
+%footer
+  #menu
+    #contact
+      e-mail:
+      dyachenkole@gmail.com
+      %br
+      VKontakte:
+      %a{href: "http://vk.com/id22178846"} vk.com/ValeriaDyachenko
+    #VD
+      © 2014 Notebook
+      %br
+      by Valeria Dyachenko
+
+      
+      
+      

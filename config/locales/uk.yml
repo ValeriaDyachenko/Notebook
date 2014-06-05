@@ -1,0 +1,116 @@
+uk:
+#Views
+  #Devise
+  Forgot: "Забули"
+  Your: "Ваш"
+  Password: "Пароль"
+  Forgot your password?: "Забули ваш пароль?"
+  Send me reset password instructions: "Відправити налаштування по відновленню пароля"
+  Sign up: "Реєстрація"
+  Password confirmation: "Підтвердження пароля"
+  Sign in: "Увійти"
+  Remember me: "Запам'ятати мене"
+
+#For all
+  Are you sure?: "Ви впевнені?"
+  Add: "+"
+  Create: "Створити"
+  Update: "Оновити"
+  Back: "Назад"
+  count: "кількість"
+  Home: "Домашня сторінка"
+  Settings: "Налаштування"
+  All Sections: "Усі Розділи"
+  All Tasks: "Щоденник Завдань"
+  Book Tasks: "Книга Завдань"
+  Book Contacts: "Книга Контактів"
+  Book Notes: "Книга записів"
+  Sign out: "Вийти"
+  Title can't be blank: "Найменування не повинно бути відсутнім"
+
+# Home  
+  eN: "Занотуйте, щоб не забути"
+  Sign: "Вхід в систему"
+  p1: "Записна книжка. Ваш особистий помічник "
+  p2: "Записна книжка складається з розділів, де знаходяться ваші сторінки з нотатками. "
+  p3: "Кожній сторінці можна дати назву - це дозволить вам легко орієнтуватися в своїх замітках. "
+  p4: "Кожна замітка має статус виконання - це дозволить відокремити виконані від невиконаних"
+#Settings
+  Edit Profile: "Редагувати профіль"
+  Leave blank: "(залиште поле порожнім якщо не хочете вносити зміни)"
+  password_confirmation: "Підтвердження пароля"
+  current_password: "Поточний пароль"
+  we need: "(введіть свій поточний пароль для підтвердження змін)"
+  Cancel my account: "Видалити назавжди мій аккаунт"
+  Password New: "Новий пароль"
+  Delete: "Видалити"
+
+#Section
+  Title Section: "Найменування Розділу"
+  Edit Section: "Редагувати Розділ"
+  EditS: "Редагувати"
+  Sectione: "Розділ"
+  Back to Sections: "Повернутися до розділів"
+  New Section: "Новий Розділ"
+  All Sections: "Всі Розділи"
+
+#Page
+  New Page: "Нова Сторінка"
+  Title Page: "Найменування Сторінки"
+  EditP: "Редагувати"
+  Pagee: "Сторінку"
+  Back to Section: "Повернутися до Розділу"
+
+#Task
+  Title Task: "Найменування Завдання"
+  Description Task: "Опис Завдання"
+  Status: "Статус"
+  Edit Task: "Редагувати Завдання"
+  EditN: "Редагувати"
+  Taske: "Завдання"
+  Completed Tasks: "Завершені Завдання"
+  ToDo Tasks: "Незавершені Завдання"
+  Page: "Сторінка"
+  New Task: "Нове Завдання"
+
+#Activerecord
+  activerecord:
+    errors: 
+      models: 
+        user: 
+          attributes: 
+            email:
+              taken: " вже використовується"
+              invalid: " недійсний"
+              blank: "не може бути пустим"
+            password:
+              blank: "не може бути пустим"
+              too_short: "Пароль занадто короткий (мінімум 6 символів)"
+            password_confirmation: 
+              confirmation: ": паролі не співпадать"
+#Contacts
+  Surname: "Прізвище"
+  Name Patronymic: "Ім'я, По-батькові"
+  About Contact: "Додаткова інформація"
+  Phone: "Телефон"
+  Address: "Адреса"
+  Fax: "Факс"
+  Email: "Email"
+  Skype: "Skype"
+  Site: "Сайт"
+  Edit Contact: "Редагувати Контакт"
+  Surname can't be blank: "Прізвище не повинноо бути відсутнім"
+  New Contact: "Новий Контакт"
+  Open Contact: "Відкрити Контакт:"
+  See all contacts: "Переглянути всі контакти"
+
+#Task  
+  Urgent Task: "Терінові завдання"
+  Executed: "Виконано"
+  Urgently: "Терміново"
+  Title: "Найменування"
+  Execute Until: "Виконати до:"
+
+
+  Open page: "Відкрити сторінку:"
+  See all pages: "Переглянути всі сторінки"  

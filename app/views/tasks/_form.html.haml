@@ -1,0 +1,19 @@
+= form_for([@todosection, @todopage, @todopage.tasks.build]) do |f|
+  = f.label I18n.t("Title Task")
+  = f.text_field :title
+  = f.label I18n.t("Description Task")
+  = f.text_field :description
+  %br
+  = f.check_box :execution_status
+  =I18n.t("Executed")
+  = f.check_box :urgency_status
+  =I18n.t("Urgently")
+  =I18n.t("Execute Until")
+  = f.date_field :completion_date
+  %br
+  = f.submit I18n.t("Create")
+  %br
+  %space <-
+  = link_to I18n.t("Back"),@todosection
+  
+

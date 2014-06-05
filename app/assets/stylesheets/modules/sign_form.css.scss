@@ -1,0 +1,42 @@
+.stiker{
+  @include column(4,center);
+  @include padding-trailer(3);
+  @include padding-leader(2.3);
+  background-image: image-url("21.png");  
+  background-repeat: no-repeat;
+  position: relative;
+  height: 600px;
+  width: 600px;
+  .devise-form{
+    text-align: center;  
+    text-shadow: 0 0.5px 0 black;
+    .title{
+      font: italic 55px/1.1  Georgia, 'Times New Roman';
+      color: $title_form;
+    }
+    legend {
+      @include column(8.5,center);
+      letter-spacing: 3px;
+      color: $purple; 
+    }
+    #error_explanation {
+      margin-left: 20px;
+    }
+  }
+}
+#big{
+  @include margin-leader;
+  @include padding-leader(2.7);
+  background-image: image-url("31.png"); 
+  .title{
+    font: italic 45px  Georgia, 'Times New Roman';
+  }
+  i{
+    font-size: 13px;
+    color: black
+  }
+  .title{
+    font: italic 36px/1.1  Georgia, 'Times New Roman';
+    color: $title_form;
+  }
+}

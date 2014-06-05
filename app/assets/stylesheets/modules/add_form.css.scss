@@ -1,0 +1,41 @@
+.add_form{
+  @include column(4,center);
+  @include padding-leader(2);
+  @include margin-leader(0.2);
+  background-repeat: no-repeat;
+  margin-right: 19%;
+  padding-right: 100px;
+  position: relative;
+  height: 250px;
+  width: 500px;
+  background-image: image-url("2mini.png");
+  text-align: center;
+  font-size: 24px;
+  text-shadow: 1px 1px black;
+  color: $title_form;
+  input[type="submit"]{
+    background-image: image-url("plus.png");      
+    background-repeat: no-repeat;
+    background-color: transparent;
+    color: $title_form;
+    border: none;
+    height: 70px;
+    width: 70px;
+    font-size: 22px;    
+  } 
+}
+.mini_add{
+  @include padding-leader(1.8);
+  background-image: image-url("3mini.png");
+}
+
+.not_br_add{
+  margin-top: -6%;
+}
+
+.max_add{
+  @include padding-leader(2.5);
+  background-image: image-url("2max.png");
+  height: 350px;
+  width: 500px;
+}

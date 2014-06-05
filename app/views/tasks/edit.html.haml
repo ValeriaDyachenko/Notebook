@@ -1,0 +1,25 @@
+.e_form
+  #title
+    =t("EditN")
+    %br
+    =t("Taske")
+  = form_for :task, url: todosection_todopage_task_path, method: :patch do |f|
+    - if @task.errors.any?
+      #error_explanation
+        = @error
+    = f.label I18n.t("Title Task")
+    = f.text_field :title
+    = f.label I18n.t("Description Task")
+    = f.text_field :description
+    %br
+    = f.check_box :execution_status
+    Execution status
+    = f.check_box :urgency_status
+    Urgency status
+    Completion date
+    = f.date_field :completion_date
+    %br
+    = f.submit I18n.t("Update")
+    %br
+    %space <-
+    = link_to I18n.t("Back"),@todosection

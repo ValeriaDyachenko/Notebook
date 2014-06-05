@@ -1,0 +1,31 @@
+.e_form{
+  @include column(6,center);
+  @include margin-leader(2);
+  @include padding-leader(2);
+  background-image: image-url("11.png");
+  background-repeat: no-repeat;
+  position: relative;
+  height: 600px;
+  width: 600px;
+  text-align: center;
+  padding-left: 30px;
+  color: $purple;
+  letter-spacing: 3px;
+  text-shadow: 0 1px 0 black;
+  #title{
+    @include padding-trailer(0.3);
+    font: italic 45px  Georgia, 'Times New Roman';
+    color: $title_form;
+    text-shadow: 0 1px 0 black;
+  }
+  #error_explanation {
+    margin-left: 80px;
+    width: 345px;
+  }
+}
+.big{
+  
+    background-image: image-url("111.png");
+      height: 700px;
+      width: 630px;
+}

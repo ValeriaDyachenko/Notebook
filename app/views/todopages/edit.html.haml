@@ -1,0 +1,17 @@
+.e_form
+  #title
+    =t("EditP")
+    %br
+    =t("Pagee")
+  = form_for :todopage, url: todosection_todopage_path, method: :patch do |f|
+    - if @todopage.errors.any?
+      #error_explanation
+        = @error
+    %p
+      = f.label I18n.t("Title Page")
+      = f.text_field :title
+      %br
+      = f.submit I18n.t("Update")
+  %br
+  %space <-
+  = link_to I18n.t("Back"),@todosection

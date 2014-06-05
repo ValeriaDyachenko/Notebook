@@ -1,0 +1,15 @@
+.e_form
+  #title
+    =t("EditS")
+    %br
+    =t("Sectione")
+  = form_for :notesection, url: notesection_path, method: :patch do |f|
+    - if @notesection.errors.any?
+      #error_explanation
+        = @error
+  = render 'form'
+  %space <-
+  = link_to I18n.t("Back to Sections"), notesections_path
+  %br
+  %space <-
+  = link_to I18n.t("Back to Section"), notesection_path

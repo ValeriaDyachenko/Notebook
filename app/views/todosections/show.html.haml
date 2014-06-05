@@ -1,0 +1,27 @@
+.about
+  #title #{@todosection.title}
+  %space <-
+  = link_to  I18n.t("Back to Sections"), todosections_path
+  |
+  = link_to  I18n.t("Edit Section"), edit_todosection_path(@todosection)
+  %space ->
+  %br
+  =I18n.t("Open page")
+  %select#page_select{name: "page_select", onchange: "document.location=this.options[this.selectedIndex].value"}
+    %option ...
+    - @todopage.each do |p|
+      %option{value:"#{@todosection.id}/todopages/#{p.id}"}
+        = p.title
+.block
+  .extremum-click.pb
+    .pages_block 
+      =I18n.t("See all pages")
+      = image_tag("down.png", :border => 0)
+  .extremum-slide 
+    = render @todosection.todopages
+
+.add_form
+  = form_for([@todosection, @todosection.todopages.build]) do |f|
+    = f.label I18n.t("New Page")
+    = f.text_field :title,placeholder: I18n.t("Title Page")
+    = f.submit I18n.t("Add")  

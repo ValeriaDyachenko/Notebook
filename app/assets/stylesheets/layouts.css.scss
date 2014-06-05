@@ -1,0 +1,51 @@
+body{
+  @include outerRow;
+  @include background-size(100% 100%);
+  background-image: image-url("b.jpg");
+  font:italic 18px Arial, serif; 
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  color: $darkgreen;
+}
+
+header{
+  @include column(10,center);
+  color: $h_f_blue;
+  ul {
+    font-size: 20px;
+    padding: 4px; 
+    padding-top: 14px;
+    #right{
+      @include column(4);
+      text-align: right;
+    }
+    #left{
+      @include column(8);
+      text-align: left;
+    }
+    li {
+      display: inline; 
+      font-stretch: expanded;
+    }
+  }
+}
+
+footer{
+  @include margin-leader(1.5);
+  bottom: 0px;
+  color: $h_f_blue;
+  font-size: 20px;
+  #menu{
+    @include column(10,center);
+    #contact{
+      @include column(6);
+      text-align: left;
+    }
+    #VD{
+      @include column(6);
+      text-align: right;
+    }
+  }
+}
+

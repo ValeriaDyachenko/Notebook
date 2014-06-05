@@ -1,0 +1,7 @@
+.e_form
+  #title 
+    =t("New Task")
+  - if @task.errors.any?
+    #error_explanation
+      = @error
+  = render 'form'

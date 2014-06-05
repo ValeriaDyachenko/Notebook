@@ -1,0 +1,20 @@
+.e_form.big
+  #title
+    =t("EditP")
+    %br
+    =t("Pagee")
+  = form_for :notepage, url: notesection_notepage_path, method: :patch do |f|
+    - if @notepage.errors.any?
+      #error_explanation
+        = @error
+    %p
+      = f.label I18n.t("Title Page")
+      = f.text_field :title
+      %br
+      = f.label "Description Page"
+      = f.text_area :description 
+      %br
+      = f.submit I18n.t("Update")
+  
+  %space <-
+  = link_to I18n.t("Back"),@notesection

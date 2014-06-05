@@ -1,0 +1,29 @@
+space { 
+  color: $purple;
+  font-size: 22px;
+}
+
+.locales{
+	text-align: center;
+	@include margin-leader(0.4);
+}
+
+
+.pages_block {
+	text-align: center;
+	padding:1%;
+}
+.pb{@include column(6,center);
+  @include background-size(100%);
+  background-image: image-url("note.jpg");
+  border: 2px $blue_form_border solid;
+  border-radius: 7px; 
+  @include margin-trailer(0.5);
+  font-size: 24px;}
+
+.extremum-slide {
+display:none;  
+}
+.display{
+display:block;    
+}

@@ -1,0 +1,15 @@
+.notes
+  %table
+    %td#chek
+      = link_to check_box_tag('execution_status', 'execution_status', task.execution_status) , todosection_todopage_task_st_path(@todosection.id,task.todopage_id,task.id), controller: :tasks,method: :put 
+    %td#name
+      #{task.title}
+      .descr
+        #{task.description}
+    %td#urgency
+      = link_to check_box_tag('urgency_status', 'urgency_status', task.urgency_status) , todosection_todopage_task_ust_path(@todosection.id,task.todopage_id,task.id), controller: :tasks,method: :put 
+    %td#date
+      #{task.completion_date}
+    %td#hrefs
+      = link_to image_tag("edt.png", :border => 0), edit_todosection_todopage_task_path(task.todopage.todosection,task.todopage,task) 
+      = link_to image_tag("delt.png",:border => 0), [task.todopage.todosection, task.todopage, task],  method: :delete, data: { confirm: I18n.t("Are you sure?") }

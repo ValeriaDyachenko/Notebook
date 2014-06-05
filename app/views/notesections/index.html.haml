@@ -1,0 +1,23 @@
+.add_form.mini_add
+  = form_for @notesection do |f|
+    = f.label I18n.t("New Section")
+    = f.text_field :title, placeholder: I18n.t("Title Section"), style: "margin-top:6px;border:1px #DEB887 solid "
+    = f.submit I18n.t("Add")
+
+.page.sections.not_br
+  %table
+    %tr#head
+      %th
+        #title
+          =t("All Sections")
+      %th
+    - @notesections.each do |s|
+      %tr#section_id
+        %td#names
+          = s.title
+        %td#linkss
+          = link_to image_tag("show.png", :border => 0), s
+          = link_to image_tag("ed.png", :border => 0), edit_notesection_path(s)
+          = link_to image_tag("del.png", :border => 0), notesection_path(s),    method: :delete, data: { confirm: I18n.t("Are you sure?") } 
+
+

@@ -1,0 +1,16 @@
+%br
+%br
+%br
+.page.word-break
+	%table
+		%tr#head
+			%td
+				#title 
+					= link_to image_tag("comeback.png", :border => 0),@notesection
+					#{@notepage.title}
+					= link_to image_tag("ed.png", :border => 0),  edit_notesection_notepage_path(@notesection,@notepage)
+					= link_to image_tag("del.png", :border => 0),  [@notepage.notesection, @notepage],  method: :delete, data:  { confirm: I18n.t("Are you sure?") }
+	
+	%tr#section_id
+		%td#name
+			#{@notepage.description}     

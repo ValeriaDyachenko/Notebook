@@ -1,0 +1,31 @@
+%br
+%br
+%br
+.page.section.max
+  %space <-
+  = link_to I18n.t("Back"),@contact
+  = form_for @contact do |f|
+    = f.label I18n.t("New Contact")
+    - if @contact.errors.any?
+      #error_explanation
+        = @error
+    = f.text_field :surname, placeholder: I18n.t("Surname"), style: "margin-top:6px;border:1px #DEB887 solid "
+    = f.text_field :name_patronymic, placeholder: I18n.t("Name Patronymic"), style: "margin-top:6px;border:1px #DEB887 solid"
+    = f.text_field :about, placeholder: I18n.t("About Contact"), style: "margin-top:6px;border:1px #DEB887 solid "
+    %br
+    = f.text_field :phone, placeholder:I18n.t("Phone"), style: "margin-top:6px;border:1px #DEB887 solid "
+    = f.text_field :address, placeholder: I18n.t("Address"), style: "margin-top:6px;border:1px #DEB887 solid "
+    = f.text_field :fax, placeholder: I18n.t("Fax"), style: "margin-top:6px;border:1px #DEB887 solid "
+    %br
+    = f.text_field :email, placeholder: I18n.t("Email"), style: "margin-top:6px;border:1px #DEB887 solid "
+    = f.text_field :skype, placeholder: I18n.t("Skype"), style: "margin-top:6px;border:1px #DEB887 solid "
+    %br
+    = f.text_field :site, placeholder: I18n.t("Site"), style: "margin-top:6px;border:1px #DEB887 solid "
+    %br
+    = f.submit I18n.t("Add"),style: "color:#B22222; width:18%;font-size:40px;"
+
+
+        
+        
+        
+        

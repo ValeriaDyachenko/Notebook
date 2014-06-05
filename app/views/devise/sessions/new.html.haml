@@ -1,0 +1,27 @@
+.stiker
+  .devise-form
+    %legend
+      .title#si
+        =t("Sign in")
+      %br
+      = form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f|
+        - if notice 
+          %alert.alert-notice 
+            = notice 
+        - if alert
+          %alert.alert-error 
+            = alert
+        %div
+          = f.label :email
+          = f.email_field :email, :autofocus => true
+        %div
+          = f.label I18n.t("Password")
+          = f.password_field :password
+        - if devise_mapping.rememberable?
+          %input{:type => "checkbox"}
+          =t("Remember me")
+          %br
+          %br
+        %div= f.submit I18n.t("Sign in"), data: { disable_with: "Please wait" }
+        %br
+      = render "devise/shared/links"

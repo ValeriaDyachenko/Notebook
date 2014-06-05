@@ -1,0 +1,10 @@
+.e_form
+  #title
+    =t("New Section")
+  - if @notesection.errors.any?
+    #error_explanation
+      = @error
+  = render 'form'
+  %br
+  %space <-
+  = link_to I18n.t("Back to Sections"), notesections_path

@@ -1,0 +1,31 @@
+.page
+  %table
+    %tr#head
+      %td
+      %td
+        #title 
+          #{todopage.title}
+          = link_to image_tag("ed.png", :border => 0),  edit_todosection_todopage_path(@todosection,[todopage])
+          = link_to image_tag("del.png", :border => 0),  [todopage.todosection, todopage],  method: :delete, data:  { confirm: I18n.t("Are you sure?") }    
+      %td
+      %td
+      %td
+    %th#chek 
+      =I18n.t("Executed")
+    %th#name 
+      =I18n.t("Title")
+    %th#urgency 
+      =I18n.t("Urgently")
+    %th#date 
+      =I18n.t("Execute Until")
+    %th#hrefs 
+
+  = render todopage.tasks
+  
+  %br
+  = form_for([@todosection, todopage, todopage.tasks.build]) do |f|
+    = f.text_field :title,:style => 'border:1px #6699CC solid ;width: 83%;margin: 1%', placeholder: I18n.t("Title Task")
+    .btn.btn-primary
+      = f.submit I18n.t("Add")
+  %br
+%br

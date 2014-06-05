@@ -1,0 +1,15 @@
+.e_form
+  #title
+    =t("EditS")
+    %br
+    =t("Sectione")
+  = form_for :todosection, url: todosection_path, method: :patch do |f|
+    - if @todosection.errors.any?
+      #error_explanation
+        = @error
+  = render 'form'
+  %space <-
+  = link_to I18n.t("Back to Sections"), todosections_path
+  %br
+  %space <-
+  = link_to I18n.t("Back to Section"), todosection_path

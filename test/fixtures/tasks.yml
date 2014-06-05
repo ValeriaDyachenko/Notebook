@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  description: MyText
+  execution_status: false
+  urgency_status: false
+  completion_date: 2014-05-26
+  todopage_id: 
+
+two:
+  title: MyString
+  description: MyText
+  execution_status: false
+  urgency_status: false
+  completion_date: 2014-05-26
+  todopage_id: 

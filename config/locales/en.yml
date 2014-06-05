@@ -1,0 +1,104 @@
+en:
+#Devis
+  Forgot: "Forgot"
+  Your: "Your"
+  Password: "Password"
+  Forgot your password?: "Forgot your password?"
+  Send me reset password instructions: "Send me reset password instructions"
+  Sign up: "Registration"
+  Password confirmation: "Password confirmation"
+  Sign in: "Login"
+  Remember me: "Remember me"
+  forgot_your_password: "Forgot your password?"
+
+#For all
+  Are you sure?: "Are you sure?"
+  Add: "+"
+  Create: "Create"
+  Update: "Update"
+  Back: "Back"
+  count: "count"
+  Settings: "Settings"
+  Home: "Home"
+  All Sections: "All Sections"
+  All Tasks: "Blog Tasks"
+  Book Tasks: "Book of Tasks"
+  Book Contacts: "Book Contacts"
+  Book Notes: "Book Notes"
+  English: "English"
+  Russian: "Russian"
+  Sign out: "Sign out"
+  Title can't be blank: "Title can't be blank"
+
+# Home  
+  eN: "Make a task not to forget"
+  Sign: "Login:"
+  p1: "Notebook.Your Personal Assistant"
+  p2: "Notebook consists of sections where your pages with tasks."
+  p3: "Each page can be given a name - this will allow you to easily navigate in his tasks."
+  p4: "Каждая заметка имеет статус выполнения-это позволит отделить выполненые от невыполненых."
+
+#Settings
+  Edit Profile: "Edit Profile"
+  Leave blank: "(leave blank if you don't want to change it)"
+  password_confirmation: "Password confirmation"
+  current_password: "Current password"
+  we need: "(we need your current password to confirm your changes)"
+  Cancel my account: "Delete my account"
+  Password New: "Password New"
+  Delete: "Delete"
+
+#Section
+  Title Section: "Title Section"
+  Edit Section: "Edit Section"
+  EditS: "Edit Section"
+  Sectione: ""
+  Back to Sections: "Back to Sections"
+  New Section: "New Section"
+  All Sections: "All Sections"
+
+#Page
+  New Page: "New Page"
+  Title Page: "Title Page"
+  EditP: "Edit Page"
+  Pagee: ""
+  Back to Section: "Back to Section"
+
+#Task
+  Title Task: "Title Task"
+  Description Task: "Description Task"
+  Status: "Status"
+  Edit Task: "Edit Task"
+  EditN: "Edit Task"
+  Taske: ""
+  Completed Tasks: "Completed Tasks"
+  ToDo Tasks: "ToDo Tasks"
+  Page: "Page"
+  New NTaskte: "New Task"
+
+#Contacts
+  Surname: "Surname"
+  Name Patronymic: "Name Patronymic"
+  About Contact: "About Contact"
+  Phone: "Phone"
+  Address: "Address"
+  Fax: "Fax"
+  Email: "Email"
+  Skype: "Skype"
+  Site: "Site"
+  Edit Contact: "Edit Contact"
+  Surname can't be blank: "Surname can't be blank"
+  New Contact: "New Contact"
+  Open Contact: "Open Contact"
+  See all contacts: "See all contacts"
+
+#Task  
+  Urgent Task: "Urgent Task"
+  Executed: "Executed"
+  Urgently: "Urgently"
+  Title: "Title"
+  Execute Until: "Execute Until"
+
+
+  Open page: "Open page"
+  See all pages: "See all pages"  

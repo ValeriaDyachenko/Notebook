@@ -1,0 +1,19 @@
+.stiker
+  .devise-form
+    %legend
+      .title
+        =t("Sign up")
+      %br
+      = form_for(resource, :as => resource_name, :url => registration_path(resource_name))  do |f|
+        = devise_error_messages!
+        %div
+          = f.label :email
+          = f.email_field :email, :autofocus => true
+        %div
+          = f.label I18n.t("Password")
+          = f.password_field :password
+        %div
+          = f.label I18n.t("Password confirmation")
+          = f.password_field :password_confirmation
+        %div= f.submit I18n.t("Sign up")
+      = render "devise/shared/links"

@@ -1,0 +1,35 @@
+.home_text{
+  @include outerRow;
+  @include column(10,center);
+  @include margin-trailer; 
+  @include margin-leader(0.9);
+  .title{
+    font-size: 38px;
+  }
+  .title2{
+    font-size: 30px;
+  }
+  .title, .title2{
+    padding-bottom: 5px;
+    line-height: 1.4em;
+    font-weight: bold;
+    text-align: center;
+  }
+  .title3{
+    @include margin-trailer(0.5); 
+    font-size: 26px;
+    line-height: 1.3em;
+    text-align: center;
+  }
+  p{
+    @include column(9,center);
+    padding: 7px 0px;
+    font-size: 20px;
+  }
+}
+
+.sin{
+  position: relative;
+  @include column(2,center);
+}
+

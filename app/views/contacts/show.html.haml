@@ -1,0 +1,56 @@
+%br
+%br
+%br
+.contact_id
+	%table
+		%tr
+			%td
+			%td
+				= link_to image_tag("comeback.png", :border => 0), contacts_path
+				= link_to image_tag("ed.png", :border => 0), edit_contact_path(@contact)
+				= link_to image_tag("del.png", :border => 0), contact_path(@contact),method: :delete, data: { confirm: I18n.t("Are you sure?") } 
+		%tr
+			%th
+				=I18n.t("Surname")
+			%td 
+				= @contact.surname
+		%tr
+			%th
+				=I18n.t("Name Patronymic")
+			%td 
+				= @contact.name_patronymic
+		%tr
+			%th
+				=I18n.t("About Contact")
+			%td 
+				= @contact.about
+		%tr
+			%th
+				=I18n.t("Phone")
+			%td 
+				= @contact.phone
+		%tr
+			%th
+				=I18n.t("Address")
+			%td 
+				= @contact.address
+		%tr
+			%th
+				=I18n.t("Fax")
+			%td 
+				= @contact.fax
+		%tr
+			%th
+				=I18n.t("Email")
+			%td 
+				= @contact.email
+		%tr
+			%th
+				=I18n.t("Skype")
+			%td 
+				= @contact.skype
+		%tr
+			%th
+				=I18n.t("Site")
+			%td 
+				= @contact.site

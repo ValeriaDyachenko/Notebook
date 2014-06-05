@@ -1,0 +1,18 @@
+%header
+  %ul
+    - if user_signed_in?
+      #left
+        %li #{link_to I18n.t("Home"), controller: "home"}
+        |
+        %li #{link_to I18n.t("All Tasks"),controller: "tasks"}  
+        %br
+        %li #{link_to I18n.t("Book Tasks"), controller: "todosections"}
+        |
+        %li #{link_to I18n.t("Book Contacts"),controller: "contacts"}
+        |
+        %li #{link_to I18n.t("Book Notes"),controller: "notesections"}
+      #right
+        %li #{link_to I18n.t("Settings"), edit_profile_root_path}
+        |
+        %li #{link_to I18n.t("Sign out") , destroy_user_session_path, :method => :delete} 
+        #{current_user.email}

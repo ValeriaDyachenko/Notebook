@@ -1,0 +1,48 @@
+.notes{
+
+  table{
+    td{
+      border-bottom: 1px solid $CornflowerBlue;
+      height: 38px;
+      text-align: center;
+
+    }
+    .descr{display: none;}   
+    #chek{
+      width: 10%
+    }
+    #name{
+      width: 58%;
+      text-align: left;
+    }
+    #urgency{
+      width: 10%
+    }
+    #date{
+      width: 12%
+    }
+    #hrefs{
+      width: 10%
+    }
+  }
+  table:hover {
+    background: rgba(176,196,222,0.5);
+    .descr{
+      display: block;
+      font-size: 16px;
+      color: $hower_color;
+    }
+  }      
+} 
+.note_index{
+  @include margin-leader(2);
+  @include margin-trailer;
+}
+.task_index{
+  th,td{
+    text-align: center;
+  }
+  
+  .left{text-align: left;}
+
+}
